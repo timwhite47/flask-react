@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {Link} from 'react-router';
 
-
-var Main = React.createClass({
-  render: function() {
+class Main extends Component {
+  render() {
     return (
       <div>
         <nav className="navbar navbar-default" role="navigation">
@@ -17,12 +16,12 @@ var Main = React.createClass({
           {this.props.children}
         </div>
       </div>
-    )
+    );
   }
-});
+}
 
-var Home = React.createClass({
-  render: function() {
+class Home extends Component {
+  render() {
     return (
       <div className="container">
         <div className="jumbotron text-center">
@@ -34,17 +33,8 @@ var Home = React.createClass({
       </div>
     );
   }
-});
 
-function View(props) {
-  return (
-    <div className="container">
-      <div className="jumbotron text-center">
-        <h1>That's inner view</h1>
-        <p>{props.text}</p>
-      </div>
-    </div>
-  );
-};
+}
 
-export {Main, Home, View};
+
+export {Main, Home};

@@ -1,8 +1,7 @@
 import routes from './config/routes';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
-ReactDOM.render(
-  routes,
-  document.getElementById('app')
-)
+const $el = document.getElementById('app');
+
+render(routes, $el)

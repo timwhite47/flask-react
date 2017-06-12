@@ -2,3 +2,4 @@
 venv
 node_modules
 app/static/bundle.js
+package-lock.json
