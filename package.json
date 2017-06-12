@@ -21,8 +21,8 @@
     "axios": "*",
     "css-loader": "^0.23.1",
     "draft-js": "*",
-    "react": "15.3.1",
-    "react-dom": "15.3.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
     "react-router": "3.0.5",
     "style-loader": "^0.13.1"
   }
